@@ -3,9 +3,9 @@ const path = require('path');
 const mongoose = require('mongoose')
 const bodyParser = require('body-parser');
 const methodOverride = require('method-override');
-if(process.env.NODE_ENV !=="production"){
+// if(process.env.NODE_ENV !=="production"){
   require('dotenv').config({ path: path.join(__dirname, '../.env') })
-}
+//}
 const multer = require('multer')
 const{storage}=require('../cloudinary/upload.js')
 const upload=multer({storage})
